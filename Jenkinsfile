@@ -1,5 +1,5 @@
 node("docker") {
-    docker.withRegistry('artifactory.prodwest.citrixsaassbe.net:5000/setsale/test', 'docker') {
+    docker.withRegistry('https://artifactory.prodwest.citrixsaassbe.net:5000/setsale/test', 'docker') {
     
         git url: "https://github.com/sandipdeveloper/jenkins-Test.git", credentialsId: 'sandip-git'
     
